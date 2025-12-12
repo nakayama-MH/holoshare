@@ -503,6 +503,7 @@
 
         .afterValue {
           font-size: clamp(18px, 5vw, 24px);
+          white-space: nowrap;
 
           &[data-zero="true"] {
             font-size: clamp(32px, 8vw, 40px);

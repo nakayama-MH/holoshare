@@ -274,6 +274,7 @@
     .dataTitle {
       font-size: clamp(18px, 5vw, 22px);
       margin-bottom: 30px;
+      word-break: keep-all;
     }
 
     .dataCircles {
