@@ -30,8 +30,19 @@ const ContactSection: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // フォーム送信処理
-    console.log('Form submitted:', formData);
+
+    const subject = encodeURIComponent('【HoloShare】お問い合わせ');
+    const body = encodeURIComponent(
+      `■ お名前\n${formData.lastName} ${formData.firstName}\n\n` +
+      `■ 会社名\n${formData.company}\n\n` +
+      `■ 部署名\n${formData.department}\n\n` +
+      `■ 役職\n${formData.position}\n\n` +
+      `■ メールアドレス\n${formData.email}\n\n` +
+      `■ 電話番号\n${formData.phone}\n\n` +
+      `■ お問い合わせ内容\n${formData.message}`
+    );
+
+    window.location.href = `mailto:info@meta-heroes.io?subject=${subject}&body=${body}`;
   };
 
   return (
