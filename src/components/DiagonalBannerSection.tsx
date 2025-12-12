@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './DiagonalBannerSection.module.scss';
 
 const DiagonalBannerSection: React.FC = () => {
@@ -7,7 +8,12 @@ const DiagonalBannerSection: React.FC = () => {
       <div className={styles.diagonalBand}>
         <div className={styles.contentWrapper}>
           <div className={styles.imageArea}>
-            {/* 画像をここに配置 */}
+            <Image
+              src="/HS_sozai_structure_02.png"
+              alt="HoloShare導入で商談化率2倍 - VR体験による購買意欲向上"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className={styles.textArea}>
             <div className={styles.textBox}>

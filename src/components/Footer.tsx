@@ -28,10 +28,9 @@ const Footer: React.FC = () => {
             <a href="#" className={`${styles.socialIcon} ${styles.line}`}>
               <Image src="/line.svg" alt="LINE" width={24} height={24} />
             </a>
-            <a href="#" className={`${styles.socialIcon} ${styles.x}`}>
+            <a href="https://x.com/MetaHeroes_100" className={`${styles.socialIcon} ${styles.x}`} target="_blank" rel="noopener noreferrer">
               <Image src="/x.svg" alt="X" width={24} height={24} />
             </a>
-            <a href="#" className={`${styles.socialIcon} ${styles.colorful}`}>SNS</a>
           </div>
         </div>
       </div>

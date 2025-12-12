@@ -38,7 +38,7 @@ export class UIManager {
           <div class="aivo-chatbot-header-content">
             <img src="${this.config.iconUrl}" alt="AIVO" class="aivo-chatbot-avatar" />
             <div class="aivo-chatbot-header-text">
-              <span class="aivo-chatbot-title">MOTTAIN-AI ChatBot</span>
+              <span class="aivo-chatbot-title">holoshare</span>
               <span class="aivo-chatbot-status">オンライン</span>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './FeaturesSection.module.scss';
 
 const FeaturesSection: React.FC = () => {
@@ -32,7 +33,13 @@ const FeaturesSection: React.FC = () => {
               </p>
             </div>
             <div className={styles.cardIcon}>
-              {/* アイコン画像をここに配置 */}
+              <Image
+                src="/HS_sozai_can_01.png"
+                alt="HoloShare - VR技術で実物大の製品を顧客に見せて購買意欲を引き出す"
+                width={200}
+                height={200}
+                className={styles.cardImage}
+              />
             </div>
           </div>
 
@@ -53,7 +60,13 @@ const FeaturesSection: React.FC = () => {
               </p>
             </div>
             <div className={styles.cardIcon}>
-              {/* アイコン画像をここに配置 */}
+              <Image
+                src="/HS_sozai_can_02.png"
+                alt="HoloShare - 色・サイズをリアルタイムでVRカスタマイズ提案"
+                width={200}
+                height={200}
+                className={styles.cardImage}
+              />
             </div>
           </div>
 
@@ -74,7 +87,13 @@ const FeaturesSection: React.FC = () => {
               </p>
             </div>
             <div className={styles.cardIcon}>
-              {/* アイコン画像をここに配置 */}
+              <Image
+                src="/HS_sozai_can_03.png"
+                alt="HoloShare - 展示会ブースで忘れられないVR体験を提供"
+                width={200}
+                height={200}
+                className={styles.cardImage}
+              />
             </div>
           </div>
 
@@ -97,7 +116,13 @@ const FeaturesSection: React.FC = () => {
               </p>
             </div>
             <div className={styles.cardIcon}>
-              {/* アイコン画像をここに配置 */}
+              <Image
+                src="/HS_sozai_can_04.png"
+                alt="HoloShare - 移動なしで全国・海外顧客にVRリモートデモ"
+                width={200}
+                height={200}
+                className={styles.cardImage}
+              />
             </div>
           </div>
         </div>

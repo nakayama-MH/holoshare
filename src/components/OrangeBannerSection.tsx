@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './OrangeBannerSection.module.scss';
 
 const OrangeBannerSection: React.FC = () => {
@@ -16,7 +17,12 @@ const OrangeBannerSection: React.FC = () => {
             <p className={styles.subText}>御社が既に持っているデータを、そのままVR化</p>
           </div>
           <div className={styles.imageArea}>
-            {/* 画像をここに配置 */}
+            <Image
+              src="/HS_sozai_structure_03.png"
+              alt="HoloShare - CAD/BIMデータをそのままVR化して横展開"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
       </div>

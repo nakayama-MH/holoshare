@@ -119,12 +119,12 @@
   }
 
   .stepImage {
+    position: relative;
     width: 100%;
     height: 250px;
     background-color: #e0e0e0;
     border-radius: 15px;
-
-
+    overflow: hidden;
   }
 
   .arrow {

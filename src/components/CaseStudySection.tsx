@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './CaseStudySection.module.scss';
 
 const CaseStudySection: React.FC = () => {
@@ -15,14 +16,28 @@ const CaseStudySection: React.FC = () => {
       <div className={styles.industrySection}>
         <div className={styles.industryCards}>
           <a href="#manufacturing" className={styles.industryCard}>
-            <div className={styles.industryImage}></div>
+            <div className={styles.industryImage}>
+              <Image
+                src="/HS_sozai_casestudy_01.png"
+                alt="HoloShare製造・機械業界活用事例 - 大型機械VR展示・営業"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
             <div className={styles.industryLabel}>
               <span>製造・機械業界</span>
               <span className={styles.arrow}>▶</span>
             </div>
           </a>
           <a href="#construction" className={styles.industryCard}>
-            <div className={styles.industryImage}></div>
+            <div className={styles.industryImage}>
+              <Image
+                src="/HS_sozai_casestudy_02.png"
+                alt="HoloShare建設・住宅業界活用事例 - VR住宅展示・施工シミュレーション"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
             <div className={styles.industryLabel}>
               <span>建設・住宅業界</span>
               <span className={styles.arrow}>▶</span>

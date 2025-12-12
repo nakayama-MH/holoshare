@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './FlowSection.module.scss';
 
 const FlowSection: React.FC = () => {
@@ -20,7 +21,14 @@ const FlowSection: React.FC = () => {
             <div className={styles.stepContent}>
               <h3 className={styles.stepTitle}>ヒアリング</h3>
               <p className={styles.stepDescription}>貴社の課題や状況を丁寧<br />にヒアリング</p>
-              <div className={styles.stepImage}></div>
+              <div className={styles.stepImage}>
+                <Image
+                  src="/HS_sozai_process_01.png"
+                  alt="HoloShare導入STEP1 - 貴社の課題をヒアリング"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
 
@@ -33,7 +41,14 @@ const FlowSection: React.FC = () => {
             <div className={styles.stepContent}>
               <h3 className={styles.stepTitle}>ご提案</h3>
               <p className={styles.stepDescription}>具体的な活用イメージを<br />ご提案</p>
-              <div className={styles.stepImage}></div>
+              <div className={styles.stepImage}>
+                <Image
+                  src="/HS_sozai_process_02.png"
+                  alt="HoloShare導入STEP2 - VR活用の具体的なご提案"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
 
@@ -46,7 +61,14 @@ const FlowSection: React.FC = () => {
             <div className={styles.stepContent}>
               <h3 className={styles.stepTitle}>お見積り</h3>
               <p className={styles.stepDescription}>ご提案内容を基に概算費<br />用をご案内</p>
-              <div className={styles.stepImage}></div>
+              <div className={styles.stepImage}>
+                <Image
+                  src="/HS_sozai_process_03.png"
+                  alt="HoloShare導入STEP3 - 概算費用のお見積り"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './StrengthSection.module.scss';
 
 const StrengthSection: React.FC = () => {
@@ -23,7 +24,12 @@ const StrengthSection: React.FC = () => {
             <p className={styles.subText}>初回投資だけで、繰り返し活用</p>
           </div>
           <div className={styles.imageArea}>
-            {/* 画像をここに配置 */}
+            <Image
+              src="/HS_sozai_structure_01.png"
+              alt="HoloShare導入で営業コスト83%削減 - 展示会・輸送費の大幅カット"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </div>
       </div>

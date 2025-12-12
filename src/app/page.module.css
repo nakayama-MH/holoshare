@@ -131,13 +131,16 @@
 
 @media (max-width: 767px) {
   .main {
-    min-height: 70vh;
-    margin-top: -60px;
-    padding-top: 60px;
+    min-height: auto;
+    aspect-ratio: 1 / 1;
+    margin-top: 0;
+    padding-top: 0;
     padding-left: 12px;
     padding-right: 12px;
     padding-bottom: 80px;
-    background-position: center top;
+    background-image: url('/ホロシェアmobile_ファーストビュー (1).png');
+    background-size: cover;
+    background-position: center center;
   }
 
   .hero {

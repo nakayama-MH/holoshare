@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './GreenBannerSection.module.scss';
 
 const GreenBannerSection: React.FC = () => {
@@ -7,7 +8,12 @@ const GreenBannerSection: React.FC = () => {
       <div className={styles.diagonalBand}>
         <div className={styles.contentWrapper}>
           <div className={styles.imageArea}>
-            {/* 画像をここに配置 */}
+            <Image
+              src="/HS_sozai_structure_04.png"
+              alt="HoloShare - 最新3D技術で競合と差別化"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className={styles.textArea}>
             <div className={styles.textBox}>
@@ -37,7 +43,13 @@ const GreenBannerSection: React.FC = () => {
                 </div>
               </div>
               <div className={styles.iconCircle}>
-                {/* アイコン画像をここに配置 */}
+                <Image
+                  src="/HS_sozai_structure_04_1.png"
+                  alt="フォトグラメトリアイコン"
+                  width={120}
+                  height={120}
+                  style={{ objectFit: 'contain' }}
+                />
               </div>
             </div>
             <div className={styles.techItem}>
@@ -50,7 +62,13 @@ const GreenBannerSection: React.FC = () => {
                 </div>
               </div>
               <div className={styles.iconCircle}>
-                {/* アイコン画像をここに配置 */}
+                <Image
+                  src="/HS_sozai_structure_04_2.png"
+                  alt="360度アイコン"
+                  width={120}
+                  height={120}
+                  style={{ objectFit: 'contain' }}
+                />
               </div>
             </div>
             <div className={styles.techItem}>
@@ -63,7 +81,13 @@ const GreenBannerSection: React.FC = () => {
                 </div>
               </div>
               <div className={styles.iconCircle}>
-                {/* アイコン画像をここに配置 */}
+                <Image
+                  src="/HS_sozai_structure_04_3.png"
+                  alt="生成AIアイコン"
+                  width={120}
+                  height={120}
+                  style={{ objectFit: 'contain' }}
+                />
               </div>
             </div>
           </div>
