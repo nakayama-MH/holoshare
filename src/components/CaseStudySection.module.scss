@@ -484,6 +484,7 @@
     padding: 40px 0 24px;
 
     .usageCards {
+      grid-template-columns: 1fr;
       gap: 16px;
       padding: 0 12px;
     }

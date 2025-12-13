@@ -213,47 +213,48 @@
       font-size: 14px;
     }
 
-    .stepsContainer {
-      gap: 12px;
+    .swiperContainer {
+      width: 100%;
       margin-top: 30px;
+      padding: 0 20px;
+    }
+
+    .swiper {
+      width: 100%;
+      overflow: visible;
     }
 
     .stepCard {
       max-width: none;
-      flex: 1;
-      min-width: 0;
+      width: 100%;
     }
 
     .stepHeader {
-      padding: 8px 12px;
+      padding: 12px 20px;
     }
 
     .stepNumber {
-      font-size: clamp(12px, 3.5vw, 14px);
+      font-size: 18px;
     }
 
     .stepContent {
-      padding: 12px 8px;
+      padding: 20px;
     }
 
     .stepTitle {
-      font-size: clamp(14px, 4vw, 18px);
-      margin-bottom: 8px;
+      font-size: 24px;
+      margin-bottom: 12px;
     }
 
     .stepDescription {
-      font-size: clamp(10px, 3vw, 12px);
-      margin-bottom: 10px;
-      line-height: 1.4;
+      font-size: 15px;
+      margin-bottom: 16px;
+      line-height: 1.5;
     }
 
     .stepImage {
-      height: clamp(80px, 20vw, 120px);
-      border-radius: 8px;
-    }
-
-    .arrow {
-      font-size: clamp(24px, 6vw, 36px);
+      height: 180px;
+      border-radius: 10px;
     }
   }
 }
