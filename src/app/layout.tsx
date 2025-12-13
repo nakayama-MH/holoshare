@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://holoshare.jp'),
+  metadataBase: new URL('https://www.holo-share.com'),
 
   // 基本メタデータ
   title: {
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://holoshare.jp/',
+    url: 'https://www.holo-share.com/',
     siteName: 'HoloShare（ホロシェア）- VR/XR営業DXソリューション',
     title: 'HoloShare（ホロシェア）| VR/XR営業DX - 展示会・商談を「体験」に変える',
     description: 'VR/XR技術で営業活動を革新。実物大の製品をその場に表示、リアルタイムカスタマイズ提案で商談化率2倍に。展示会コスト83%削減。製造業・建設業の営業DXを実現するHoloShare。',
@@ -108,12 +108,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'HoloShare - VR/XR技術で営業を体験に変える',
+        type: 'image/png',
       },
       {
         url: '/HS_logo.png',
         width: 800,
         height: 600,
         alt: 'HoloShareロゴ',
+        type: 'image/png',
       },
     ],
   },
@@ -130,13 +132,13 @@ export const metadata: Metadata = {
 
   // Canonical URL
   alternates: {
-    canonical: 'https://holoshare.jp/',
+    canonical: 'https://www.holo-share.com/',
   },
 
   // アイコン設定
   icons: {
     icon: [
-      { url: '/HS_logo.png', type: 'image/png' },
+      { url: '/HS_logo.png', sizes: 'any', type: 'image/png' },
     ],
     apple: [
       { url: '/HS_logo.png', sizes: '180x180', type: 'image/png' },
@@ -166,6 +168,10 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#00d9d9' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' }
+  ],
 };
 
 export default function RootLayout({
@@ -179,7 +185,7 @@ export default function RootLayout({
     "@type": "Organization",
     "name": "Meta Heroes",
     "url": "https://meta-heroes.co.jp/",
-    "logo": "https://holoshare.jp/HS_logo.png",
+    "logo": "https://www.holo-share.com/HS_logo.png",
     "description": "VR/XR技術を活用した営業DXソリューション「HoloShare」を提供",
     "address": {
       "@type": "PostalAddress",
@@ -194,7 +200,7 @@ export default function RootLayout({
       "availableLanguage": ["Japanese"]
     },
     "sameAs": [
-      "https://holoshare.jp/"
+      "https://www.holo-share.com/"
     ]
   };
 
@@ -213,14 +219,14 @@ export default function RootLayout({
       "price": "0",
       "priceCurrency": "JPY",
       "priceValidUntil": "2026-12-31",
-      "url": "https://holoshare.jp/"
+      "url": "https://www.holo-share.com/"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.8",
       "reviewCount": "50"
     },
-    "image": "https://holoshare.jp/key_visual.png",
+    "image": "https://www.holo-share.com/key_visual.png",
     "category": "Business Software",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web-based"
@@ -230,7 +236,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "HoloShare（ホロシェア）",
-    "url": "https://holoshare.jp/",
+    "url": "https://www.holo-share.com/",
     "description": "VR/XR技術で営業活動を革新するソリューション",
     "publisher": {
       "@type": "Organization",
@@ -238,7 +244,7 @@ export default function RootLayout({
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://holoshare.jp/?s={search_term_string}",
+      "target": "https://www.holo-share.com/?s={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -378,7 +384,7 @@ export default function RootLayout({
         "@type": "ListItem",
         "position": 1,
         "name": "ホーム",
-        "item": "https://holoshare.jp/"
+        "item": "https://www.holo-share.com/"
       }
     ]
   };
@@ -387,11 +393,11 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://holoshare.jp/#localbusiness",
+    "@id": "https://www.holo-share.com/#localbusiness",
     "name": "Meta Heroes - HoloShare",
     "description": "VR/XR技術を活用した営業DXソリューション「HoloShare（ホロシェア）」を提供。製造業・建設業の営業効率化、展示会コスト削減を実現。",
-    "url": "https://holoshare.jp/",
-    "image": "https://holoshare.jp/HS_logo.png",
+    "url": "https://www.holo-share.com/",
+    "image": "https://www.holo-share.com/HS_logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "堂山町1-5 三共梅田ビル 8F",
@@ -439,24 +445,24 @@ export default function RootLayout({
         "position": 1,
         "name": "ヒアリング",
         "text": "貴社の課題や状況を丁寧にヒアリングします。営業活動における課題、展示会での目標、対象製品などをお聞かせください。",
-        "url": "https://holoshare.jp/#flow",
-        "image": "https://holoshare.jp/HS_sozai_process_01.png"
+        "url": "https://www.holo-share.com/#flow",
+        "image": "https://www.holo-share.com/HS_sozai_process_01.png"
       },
       {
         "@type": "HowToStep",
         "position": 2,
         "name": "ご提案",
         "text": "ヒアリング内容を基に、HoloShareの具体的な活用イメージをご提案します。実際のVRデモ体験もこの段階で可能です。",
-        "url": "https://holoshare.jp/#flow",
-        "image": "https://holoshare.jp/HS_sozai_process_02.png"
+        "url": "https://www.holo-share.com/#flow",
+        "image": "https://www.holo-share.com/HS_sozai_process_02.png"
       },
       {
         "@type": "HowToStep",
         "position": 3,
         "name": "お見積り",
         "text": "ご提案内容を基に概算費用をご案内します。3Dモデリング費用、VRゴーグルレンタル、導入サポート等を含めた総合的なお見積りを提示します。",
-        "url": "https://holoshare.jp/#flow",
-        "image": "https://holoshare.jp/HS_sozai_process_03.png"
+        "url": "https://www.holo-share.com/#flow",
+        "image": "https://www.holo-share.com/HS_sozai_process_03.png"
       }
     ]
   };
@@ -516,6 +522,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        {/* パフォーマンス最適化: リソースヒント */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
         <link rel="stylesheet" href="/aivo-chatbot.css" />
 
         {/* 構造化データ（JSON-LD） - SEO & LLMO最適化 */}

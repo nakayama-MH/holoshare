@@ -38,6 +38,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
     ],
-    sitemap: 'https://holoshare.jp/sitemap.xml',
+    sitemap: 'https://www.holo-share.com/sitemap.xml',
   };
 }

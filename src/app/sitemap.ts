@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://holoshare.jp';
+  const baseUrl = 'https://www.holo-share.com';
   const lastModified = new Date();
 
   return [
